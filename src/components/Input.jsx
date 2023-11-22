@@ -58,6 +58,7 @@ const Input = ({ setQuery, units, setUnits }) => {
         </button>
         <p className="text-white font-medium mx-1">|</p>
         <button
+          onClick={handleUnitsChange}
           name="imperial"
           className="text-white font-medium transition ease-in-out hover:-translate-y-1"
         >

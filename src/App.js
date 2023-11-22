@@ -33,11 +33,13 @@ function App() {
       return 'from-blue-500 to-green-100'
     }
 
-    return 'from-amber-500 to-orange-100'
+    return 'from-amber-600 to-orange-100'
   }
 
   return (
-    <div className={`bg-gradient-to-br ${formatBackground()} h-screen`}>
+    <div
+      className={`transition-colors duration-700 bg-gradient-to-br ${formatBackground()} h-screen `}
+    >
       <div className="m-auto  max-w-screen-md py-5">
         <TopButtons setQuery={setQuery} />
         <Input setQuery={setQuery} units={units} setUnits={setUnits} />

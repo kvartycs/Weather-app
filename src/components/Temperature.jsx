@@ -47,12 +47,12 @@ const Temperature = ({
           <div className="flex font-light text-sm ietms-center justify-center">
             <UilWind size={18} className="mr-1" />
             Ветер:
-            <span className="font-medium ml-1">{speed} m/s</span>
+            <span className="font-medium ml-1">{speed} м/с</span>
           </div>
         </div>
       </div>
       <div className="flex flex-row items-center justify-center space-x-2 text-white text-sm py-3">
-        <UilSun></UilSun>
+        <UilSun />
         <p className="font-light">
           Восход:&nbsp;
           <span className="font-medium ml-1">
@@ -60,7 +60,7 @@ const Temperature = ({
           </span>
         </p>
         <p className="font-light">|</p>
-        <UilSunset></UilSunset>
+        <UilSunset />
         <p className="font-light">
           Закат:&nbsp;
           <span className="font-medium ml-1">
@@ -68,7 +68,7 @@ const Temperature = ({
           </span>
         </p>
         <p className="font-light">|</p>
-        <UilArrowUp></UilArrowUp>
+        <UilArrowUp />
         <p className="font-light">
           День:&nbsp;
           <span className="font-medium ml-1">{temp_max.toFixed()}°</span>
