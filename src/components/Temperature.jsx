@@ -35,18 +35,18 @@ const Temperature = ({
         <p className="text-5xl">{temp.toFixed()}°</p>
         <div className="flex flex-col space-y-2">
           <div className="flex font-light text-sm ietms-center justify-center">
-            <UilTemperature size={18} className="mr-1"></UilTemperature>
-            Feels like:
+            <UilTemperature size={18} className="mr-1" />
+            Ощущается как:
             <span className="font-medium ml-1">{feels_like.toFixed()}°</span>
           </div>
           <div className="flex font-light text-sm ietms-center justify-center">
-            <UilTear size={18} className="mr-1"></UilTear>
-            Humidity:
+            <UilTear size={18} className="mr-1" />
+            Влажность:
             <span className="font-medium ml-1">{humidity}%</span>
           </div>
           <div className="flex font-light text-sm ietms-center justify-center">
-            <UilWind size={18} className="mr-1"></UilWind>
-            Wind:
+            <UilWind size={18} className="mr-1" />
+            Ветер:
             <span className="font-medium ml-1">{speed} m/s</span>
           </div>
         </div>
@@ -54,7 +54,7 @@ const Temperature = ({
       <div className="flex flex-row items-center justify-center space-x-2 text-white text-sm py-3">
         <UilSun></UilSun>
         <p className="font-light">
-          Rise:{' '}
+          Восход:&nbsp;
           <span className="font-medium ml-1">
             {formatToLocalTime(sunrise, timezone, 'hh:mm a')}
           </span>
@@ -62,7 +62,7 @@ const Temperature = ({
         <p className="font-light">|</p>
         <UilSunset></UilSunset>
         <p className="font-light">
-          Set:{' '}
+          Закат:&nbsp;
           <span className="font-medium ml-1">
             {formatToLocalTime(sunset, timezone, 'hh:mm a')}
           </span>
@@ -70,12 +70,13 @@ const Temperature = ({
         <p className="font-light">|</p>
         <UilArrowUp></UilArrowUp>
         <p className="font-light">
-          High: <span className="font-medium ml-1">{temp_max.toFixed()}°</span>
+          День:&nbsp;
+          <span className="font-medium ml-1">{temp_max.toFixed()}°</span>
         </p>
         <p className="font-light">|</p>
-        <UilArrowDown></UilArrowDown>
+        <UilArrowDown />
         <p className="font-light">
-          Low: <span className="font-medium ml-1">{temp_min.toFixed()}°</span>
+          Ночь: <span className="font-medium ml-1">{temp_min.toFixed()}°</span>
         </p>
       </div>
     </div>

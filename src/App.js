@@ -1,10 +1,8 @@
 import './index.css'
-import UilReact from '@iconscout/react-unicons/icons/uil-react'
 import TopButtons from './components/TopButtons'
 import Input from './components/Input'
 import TimeAndLocation from './components/TimeAndLocation'
 import Temperature from './components/Temperature'
-import Forecast from './components/Forecast'
 
 import getFormattedWeatherData from './services/weatherService'
 import { useEffect, useState } from 'react'
@@ -41,12 +39,12 @@ function App() {
   return (
     <div className={`bg-gradient-to-br ${formatBackground()} h-screen`}>
       <div className="m-auto  max-w-screen-md py-5">
-        <TopButtons setQuery={setQuery}></TopButtons>
-        <Input setQuery={setQuery} units={units} setUnits={setUnits}></Input>
+        <TopButtons setQuery={setQuery} />
+        <Input setQuery={setQuery} units={units} setUnits={setUnits} />
         {weather && (
           <>
-            <TimeAndLocation weather={weather}></TimeAndLocation>
-            <Temperature weather={weather}></Temperature>
+            <TimeAndLocation weather={weather} />
+            <Temperature weather={weather} />
           </>
         )}
       </div>

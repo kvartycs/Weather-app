@@ -33,7 +33,7 @@ const Input = ({ setQuery, units, setUnits }) => {
         <input
           className="text-xl font-light p-2 rounded-lg focus:outline-none capitalize placeholder:lowercase"
           type="text"
-          placeholder="Enter your city..."
+          placeholder="Enter city"
           value={value}
           onChange={(e) => setValue(e.target.value)}
         />
